@@ -21,6 +21,7 @@ export async function GET(req) {
 
   export async function POST(req) {
     const { bookingDay } = await req.json();
+    console.log('bookingday modis aq',bookingDay)
     await connectMongoDB();
     const existingBooking = await Booking.findOne({ bookingDay });
   

@@ -57,6 +57,12 @@ useEffect(() => {
         </li>
 
         <li>
+        <Link className="headerbt"  href="/courses">
+            Courses
+          </Link>
+        </li>
+
+        <li>
         <Link className="headerbt" href='#' onClick={()=>handleClick(myDivRef)}>Services</Link>
 
         </li>

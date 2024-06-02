@@ -1,12 +1,38 @@
-    import connectMongoDB from '@/lib/mongodb'
-    require('dotenv').config();
-    import Booked from '@/models/booked';
+// Import necessary modules
+import connectMongoDB from '@/lib/mongodb';
+import dotenv from 'dotenv';
+import Booked from '@/models/booked';
 
-    export async function POST(req){
-        const {choosedDate,choosedTimes,email, name, number} = await req.json();
+// Load environment variables
+dotenv.config();
+
+export async function POST(req) {
+    try {
+        // Parse request body
+        const { choosedDate, choosedTimes, email, name, number } = await req.json();
+        console.log('Received data:', { choosedDate, choosedTimes, email, name, number });
+
+        // Connect to MongoDB
         await connectMongoDB();
-        await Booked.create({choosedDate,choosedTimes, email, name, number});
-        return Response.json({ message: 'Booked' }, { status: 201 });
+        console.log('Connected to MongoDB');
+
+        // Create a new booking document
+        const booking = await Booked.create({
+            choosedDate, choosedTimes, email, name, number
+        });
+        console.log('Booking created:', booking);
+
+        // Return a success response
+        return new Response(JSON.stringify({ message: 'Booking created' }), {
+            status: 201
+        });
+    } catch (error) {
+        console.error('Error creating booking:', error);
+        return new Response(JSON.stringify({ message: 'Error creating booking', error: error.message }), {
+            status: 500,
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
     }
-
-
+}

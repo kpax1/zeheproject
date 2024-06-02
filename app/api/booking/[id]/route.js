@@ -6,7 +6,7 @@ import Booking from '@/models/booking';
 
   export async function GET(req,{params}){
     const {id} = params;
-    console.log('params',params)
+    console.log('parametrebi',params)
     await connectMongoDB();
     const booking = await Booking.findOne({bookingDay: id});
     const acailableTimes = booking.availableTimes;

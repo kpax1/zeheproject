@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 const responsive = {
@@ -36,27 +36,27 @@ const Carrousel = () => {
       <Carousel responsive={responsive}>
        
       <div className="card">
-            <img className="img" src="https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/369777056_348100631017386_2721602271975261732_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFKqHGc1uGR8BIqe0msT8_UzRjywSu6-oTNGPLBK7r6hLRdk0RIHo_-mTh6WjxiqZ2NdFq-V5g1Tg-3jK5f_Lm2&_nc_ohc=oMqo6Cj-nLcAb6j1Ygo&_nc_ht=scontent.ftbs5-2.fna&oh=00_AfBUrFBBev3j3p-R7bGu2k8U9HLKwzpFOqn30mRBj2zmUQ&oe=66138367" alt="" />
+            <Image className="img" src="https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/369777056_348100631017386_2721602271975261732_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFKqHGc1uGR8BIqe0msT8_UzRjywSu6-oTNGPLBK7r6hLRdk0RIHo_-mTh6WjxiqZ2NdFq-V5g1Tg-3jK5f_Lm2&_nc_ohc=oMqo6Cj-nLcAb6j1Ygo&_nc_ht=scontent.ftbs5-2.fna&oh=00_AfBUrFBBev3j3p-R7bGu2k8U9HLKwzpFOqn30mRBj2zmUQ&oe=66138367" alt="" />
             <h2>Levs</h2>
             <p>ხმის ინჟინერი</p>
         </div>
         <div className="card">
-            <img className="img" src="https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/369777056_348100631017386_2721602271975261732_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFKqHGc1uGR8BIqe0msT8_UzRjywSu6-oTNGPLBK7r6hLRdk0RIHo_-mTh6WjxiqZ2NdFq-V5g1Tg-3jK5f_Lm2&_nc_ohc=oMqo6Cj-nLcAb6j1Ygo&_nc_ht=scontent.ftbs5-2.fna&oh=00_AfBUrFBBev3j3p-R7bGu2k8U9HLKwzpFOqn30mRBj2zmUQ&oe=66138367" alt="" />
+            <Image className="img" src="https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/369777056_348100631017386_2721602271975261732_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFKqHGc1uGR8BIqe0msT8_UzRjywSu6-oTNGPLBK7r6hLRdk0RIHo_-mTh6WjxiqZ2NdFq-V5g1Tg-3jK5f_Lm2&_nc_ohc=oMqo6Cj-nLcAb6j1Ygo&_nc_ht=scontent.ftbs5-2.fna&oh=00_AfBUrFBBev3j3p-R7bGu2k8U9HLKwzpFOqn30mRBj2zmUQ&oe=66138367" alt="" />
             <h2>Levs</h2>
             <p>ხმის ინჟინერი</p>
         </div>
         <div className="card">
-            <img className="img" src="https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/369777056_348100631017386_2721602271975261732_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFKqHGc1uGR8BIqe0msT8_UzRjywSu6-oTNGPLBK7r6hLRdk0RIHo_-mTh6WjxiqZ2NdFq-V5g1Tg-3jK5f_Lm2&_nc_ohc=oMqo6Cj-nLcAb6j1Ygo&_nc_ht=scontent.ftbs5-2.fna&oh=00_AfBUrFBBev3j3p-R7bGu2k8U9HLKwzpFOqn30mRBj2zmUQ&oe=66138367" alt="" />
+            <Image className="img" src="https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/369777056_348100631017386_2721602271975261732_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFKqHGc1uGR8BIqe0msT8_UzRjywSu6-oTNGPLBK7r6hLRdk0RIHo_-mTh6WjxiqZ2NdFq-V5g1Tg-3jK5f_Lm2&_nc_ohc=oMqo6Cj-nLcAb6j1Ygo&_nc_ht=scontent.ftbs5-2.fna&oh=00_AfBUrFBBev3j3p-R7bGu2k8U9HLKwzpFOqn30mRBj2zmUQ&oe=66138367" alt="" />
             <h2>Levs</h2>
             <p>ხმის ინჟინერი</p>
         </div>
         <div className="card">
-            <img className="img" src="https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/369777056_348100631017386_2721602271975261732_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFKqHGc1uGR8BIqe0msT8_UzRjywSu6-oTNGPLBK7r6hLRdk0RIHo_-mTh6WjxiqZ2NdFq-V5g1Tg-3jK5f_Lm2&_nc_ohc=oMqo6Cj-nLcAb6j1Ygo&_nc_ht=scontent.ftbs5-2.fna&oh=00_AfBUrFBBev3j3p-R7bGu2k8U9HLKwzpFOqn30mRBj2zmUQ&oe=66138367" alt="" />
+            <Image className="img" src="https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/369777056_348100631017386_2721602271975261732_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFKqHGc1uGR8BIqe0msT8_UzRjywSu6-oTNGPLBK7r6hLRdk0RIHo_-mTh6WjxiqZ2NdFq-V5g1Tg-3jK5f_Lm2&_nc_ohc=oMqo6Cj-nLcAb6j1Ygo&_nc_ht=scontent.ftbs5-2.fna&oh=00_AfBUrFBBev3j3p-R7bGu2k8U9HLKwzpFOqn30mRBj2zmUQ&oe=66138367" alt="" />
             <h2>Levs</h2>
             <p>ხმის ინჟინერი</p>
         </div>
         <div className="card">
-            <img className="img" src="https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/369777056_348100631017386_2721602271975261732_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFKqHGc1uGR8BIqe0msT8_UzRjywSu6-oTNGPLBK7r6hLRdk0RIHo_-mTh6WjxiqZ2NdFq-V5g1Tg-3jK5f_Lm2&_nc_ohc=oMqo6Cj-nLcAb6j1Ygo&_nc_ht=scontent.ftbs5-2.fna&oh=00_AfBUrFBBev3j3p-R7bGu2k8U9HLKwzpFOqn30mRBj2zmUQ&oe=66138367" alt="" />
+            <Image className="img" src="https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/369777056_348100631017386_2721602271975261732_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFKqHGc1uGR8BIqe0msT8_UzRjywSu6-oTNGPLBK7r6hLRdk0RIHo_-mTh6WjxiqZ2NdFq-V5g1Tg-3jK5f_Lm2&_nc_ohc=oMqo6Cj-nLcAb6j1Ygo&_nc_ht=scontent.ftbs5-2.fna&oh=00_AfBUrFBBev3j3p-R7bGu2k8U9HLKwzpFOqn30mRBj2zmUQ&oe=66138367" alt="" />
             <h2>Levs</h2>
             <p>ხმის ინჟინერი</p>
         </div>

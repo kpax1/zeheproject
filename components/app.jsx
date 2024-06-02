@@ -42,9 +42,11 @@ function App() {
     </div>
       <motion.div
         className="o"
-        initial={{ opacity: 0.5 }}
+        initial={{ opacity: 0.1 }}
         animate={{ opacity: 1, transform: "scale(1)" }}
         transition={{ type: "spring" }}
+        viewport={{once:true}}
+      
       >
         <div className="descr">
           <div className="descrHeader">
