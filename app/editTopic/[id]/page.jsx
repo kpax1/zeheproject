@@ -3,7 +3,7 @@ import React from "react";
 
 const getToppicById = async (id) => {
   try {
-    const res = await fetch(`http://localhost:3000/topics/${id}`, {
+    const res = await fetch(`/topics/${id}`, {
       cache: "no-store",
     });
     if (!res.ok) {
