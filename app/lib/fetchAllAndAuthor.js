@@ -1,5 +1,4 @@
-
-'use server'
+"use server"
 export default async function fetchAllAndAuthor(id) {
     let res; // Define res variable outside of the if blocks
 

@@ -1,6 +1,6 @@
 import Course from "@/models/courses";
 require("dotenv").config();
-import connectMongoDB from "@/lib/mongodb";
+import connectMongoDB from "@/app/lib/mongodb";
 
 
 export async function GET(req, { params }) {

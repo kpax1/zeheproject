@@ -1,5 +1,5 @@
 // Import necessary modules
-import connectMongoDB from '@/lib/mongodb';
+import connectMongoDB from '@/app/lib/mongodb';
 import dotenv from 'dotenv';
 import Booked from '@/models/booked';
 

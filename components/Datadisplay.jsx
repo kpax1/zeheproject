@@ -1,8 +1,12 @@
 import React from "react";
-import fetchAllAndAuthor from "@/lib/fetchAllAndAuthor";
+import fetchAllAndAuthor from "@/app/lib/fetchAllAndAuthor";
 import Link from "next/link";
 import { Suspense } from "react";
 import Image from "next/image";
+
+
+
+
 const Datadisplay = async ({ author }) => {
   const authorData = await fetchAllAndAuthor(author);
     const data = await authorData;

@@ -1,4 +1,4 @@
-import connectMongoDB from '@/lib/mongodb'
+import connectMongoDB from '@/app/lib/mongodb'
 require('dotenv').config();
 import Booking from '@/models/booking';
 

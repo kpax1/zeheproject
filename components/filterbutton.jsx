@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-import fetchAuthor from '@/lib/fetchAllAndAuthor';
+import fetchAuthor from '@/app/lib/fetchAllAndAuthor';
 
 const Filterbutton = () => {
     const [data, setData] = useState(null); // State to store fetched data

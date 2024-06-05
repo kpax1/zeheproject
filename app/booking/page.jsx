@@ -4,7 +4,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Form from "@/components/Form";
 import styled from "styled-components";
-import fetchData from "@/lib/fetchavailableTimes";
+import fetchData from "@/app/lib/fetchavailableTimes";
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
 const Page = () => {
@@ -13,7 +13,7 @@ const Page = () => {
   const isFirstRender = useRef(true);
   const [selectedTimes, setSelectedTimes] = useState([]);
 
-  console.log("choosedDATe", startDate);
+  console.log("choosedDATe is ", startDate);
 
   const minDate = new Date(); // Set minimum date to the current date
 
@@ -30,56 +30,57 @@ const Page = () => {
   console.log("mindate", `${minDate.getFullYear()}}`);
   console.log("startdate", startDate);
 
+  const fetchAvailableTimes = async () => {
+    try {
+      const formattedDate = `${startDate.getDate()}.${
+        startDate.getMonth() + 1
+      }.${startDate.getFullYear()}`;
+      const response = await fetch(`/api/booking/${formattedDate}`, {
+        method: "GET",
+        cache: "no-cache",
+      });
+      if (response.ok) {
+        const data = await response.json(); // Parse response body as JSON
+        setAvailableDates(data.acailableTimes);
+        // Log fetched data
+        // Handle the fetched data as needed, maybe set it to state for display
+      } else {
+        throw new Error("Failed to fetch data");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
 
   useEffect(() => {
-
-    const fetchAvailableTimes = async () => {
+    const postBookingDate = async () => {
       try {
-        const formattedDate = `${startDate.getDate()}.${
-          startDate.getMonth() + 1
-        }.${startDate.getFullYear()}`;
-        const response = await fetch(`/api/booking/${formattedDate}`, {
-          method: "GET",
-          cache: "no-cache",
+        const response = await fetch("/api/booking", {
+          method: "POST",
+          headers: { "Content-type": "application/json" },
+          body: JSON.stringify({ bookingDay: formattedDate }),
         });
         if (response.ok) {
-          const data = await response.json(); // Parse response body as JSON
-          setAvailableDates(data.acailableTimes);
-          // Log fetched data
-          // Handle the fetched data as needed, maybe set it to state for display
+          await fetchAvailableTimes(formattedDate);
         } else {
-          throw new Error("Failed to fetch data");
+          throw new Error("Failed to post booking date");
         }
       } catch (error) {
         console.log(error);
       }
     };
 
-    const fetchData = async () => {
-      if (!isFirstRender.current && startDate) {
-        try {
-          const response = await fetch("/api/booking", {
-            method: "POST",
-            headers: { "Content-type": "application/json" },
-            body: JSON.stringify({
-              bookingDay: formattedDate,
-            }),
-          });
-          if (response.ok) {
-            console.log("newbookingday is createddddddddddddddddddddddddddd");
-            await fetchAvailableTimes(); // Fetch available times after creating the booking
-          }
-          // Handle response if needed
-        } catch (error) {
-          // Handle error
-        }
-      }
-    };
+    if (!isFirstRender.current) {
+      postBookingDate();
+    } else {
+      isFirstRender.current = false;
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [startDate, formattedDate]);
 
-    fetchData();
 
-    isFirstRender.current = false; // Update the ref after the initial render
-  }, [startDate,formattedDate]); // Only execute when startDate changes
+
 
 
   const handleDateChange = (date) => {
