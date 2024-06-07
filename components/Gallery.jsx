@@ -66,7 +66,7 @@ export default function Gallery({  imgArray,disc }) {
           rewindWithAnimation={false}
           rtl={false}
           shouldResetAutoplay
-          showDots
+          
           sliderClass=""
           slidesToSlide={1}
           swipeable
@@ -78,6 +78,8 @@ export default function Gallery({  imgArray,disc }) {
 
               </div>
 
+                <div className="zinikosgogo">
+
               <Image
                 src={pic}
                 width={500}
@@ -85,11 +87,12 @@ export default function Gallery({  imgArray,disc }) {
                 alt="Picture of the author"
                 style={{
                   display: "block",
-                  height: "90%",
                   margin: "auto",
                   width: "100%",
                 }}
               />
+                              </div>
+
             </div>
                       ))}
 

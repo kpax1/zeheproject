@@ -7,7 +7,7 @@ const page = async (params) => {
   console.log("id++P++++", id);
   const fetchIndividualCourse = async () => {
     try {
-      const res = await fetch(`/api/courses/${id}`);
+      const res = await fetch(`https://zeheproject.vercel.app/api/courses/${id}`);
       if (!res.ok) {
         console.log("Problem while fetching");
       }

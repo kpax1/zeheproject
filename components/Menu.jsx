@@ -1,24 +1,43 @@
 import { styled } from 'styled-components';
 
 import { useExampleContext } from '@/app/ExampleContext';
-
+import Link from 'next/link';
 export default function RightMenu() {
   const {handleClick, myDivRef,aboutRef,galleryRef} = useExampleContext()
   return (
     <>
         
         <Menu>
-        <div className="menuitem" onClick={()=>handleClick(aboutRef)}>
-            about us
-          </div>
-          <div className="menuitem" onClick={()=>handleClick(aboutRef)}>
-            about us
-          </div>
-          <div className="menuitem" onClick={()=>handleClick(myDivRef)}>
-            contact
-          </div>
-          <div className="menuitem" onClick={()=>handleClick(myDivRef)}>Book </div>
-          <div className="menuitem wow" onClick={()=>handleClick(galleryRef)}>gallery</div>
+          <ul>
+            <li className="menuitem wow" onClick={handleClick}>
+                <Link href={'/booking'}> Book a studio</Link>
+            </li>
+            <li className="menuitem" onClick={handleClick}>
+                <Link href={'/courses'}> Courses</Link>
+            </li>
+
+            <li className="menuitem" onClick={()=>handleClick(myDivRef)}>
+            <Link href={''}> Services</Link>
+
+            </li>
+
+            <li className="menuitem" onClick={()=>handleClick(aboutRef)}>
+                <Link href={''}> About us</Link>
+            </li>
+
+            <li className="menuitem" onClick={()=>handleClick(galleryRef)}>
+            <Link href={''}> Gallery</Link>
+
+            </li>
+
+           
+
+           
+          </ul>   
+
+        
+        
+        
         </Menu>
       
     </>
@@ -31,7 +50,7 @@ background-color: rgba(0, 0, 0, 0.97);
 position: absolute;
   top: 3.1em;
   height: 100vh;
-  width: 50vw;
+  width: 100vw;
   right: 0;
   display: flex;
   flex-direction: column;

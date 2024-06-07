@@ -8,12 +8,12 @@ import fetchData from "@/app/lib/fetchavailableTimes";
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
 const Page = () => {
-  const [startDate, setStartDate] = useState(new Date());
+  const [startDate, setStartDate] = useState(new Date);
   const [availableDates, setAvailableDates] = useState([]);
   const isFirstRender = useRef(true);
   const [selectedTimes, setSelectedTimes] = useState([]);
-
-  console.log("choosedDATe is ", startDate);
+  console.log('isfirstrender', isFirstRender.current)
+  console.log('startdate ',startDate)
 
   const minDate = new Date(); // Set minimum date to the current date
 
@@ -71,13 +71,9 @@ const Page = () => {
       }
     };
 
-    if (!isFirstRender.current) {
-      postBookingDate();
-    } else {
-      isFirstRender.current = false;
-    }
+    postBookingDate();
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [startDate, formattedDate]);
+  }, [startDate]);
 
 
 

@@ -1,5 +1,4 @@
 import React from 'react'
-import { motion } from "framer-motion";
 import Image from 'next/image'
 import mapscreen from '@/public/rentitems/mapscreen.png'
 const Footer = () => {
@@ -20,8 +19,8 @@ const Footer = () => {
 
         </div>
     
-          <Image src={mapscreen} alt='map'  width={250}
-      height={200}/>
+          <Image src={mapscreen} alt='map'  width={200}
+      height={150}/>
       </aside>
 
         
