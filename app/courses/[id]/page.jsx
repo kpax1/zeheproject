@@ -11,11 +11,10 @@ const page = async (params) => {
       if (!res.ok) {
         console.log("Problem while fetching");
       }
-      const individual = await res.json(); // Move this line inside the try block
+      const individual = await res.json(); 
       return individual;
     } catch (error) {
       console.error("Error while fetching individual course:", error);
-      // Handle the error here, such as logging or throwing
       throw error;
     }
   };

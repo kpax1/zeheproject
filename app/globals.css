@@ -1,48 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Orbitron:wght@400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anta&family=Cookie&family=Orbitron:wght@400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Orbitron:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Cookie&family=Orbitron:wght@400..900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Quicksand:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Quicksand:wght@300&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: white;
-  }
+}
 
-  body{
-    background-color: black;
-  }
+body {
+  background-color: black;
+}
 
-   
+.nav {
+  z-index: 3;
+  top: 0;
+  left: 50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 0.5px solid #ffffff4c;
+  font-family: "Cookie", cursive;
+  font-size: 2em;
+  background-color: rgb(0, 0, 0);
+  padding-bottom: 0.15em;
+}
 
-  .nav{
-    z-index: 3;
-    top: 0;
-    left: 50;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-bottom: 0.5px solid #ffffff4c;
-    font-family: "Cookie", cursive;
-    font-size: 2em;
-    background-color: rgb(0, 0, 0);
-    padding-bottom: 0.15em;
-  }
-
-
-
-video{
+video {
   width: 100%;
   height: 100vh;
   object-fit: cover;
@@ -51,21 +47,19 @@ video{
   z-index: -1;
 }
 
-.loading{
+.loading {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
-
-.bg-overley{
+.bg-overley {
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.486);
 }
 
-.o{
+.o {
   width: 100%;
   height: 100vh;
   position: absolute;
@@ -76,25 +70,21 @@ video{
   color: rgb(240, 3, 3);
   align-items: center;
   padding: 1em;
-  
 }
 
-
-h1{
-  font-family: 'Righteous', cursive;
-  font-size: 2.2em;
+h1 {
+  font-family: "Righteous", cursive;
+  font-size: 2em;
   font-weight: 200;
-  
-
 }
 
-.gallery{
-  font-family: 'Righteous', cursive;
+.gallery {
+  font-family: "Righteous", cursive;
   font-size: 2.2em;
   margin: 10px;
 }
 
-#sidebar{
+#sidebar {
   background-color: rgba(0, 0, 0, 0.785);
   color: rgb(50, 211, 38);
   padding-top: 10px;
@@ -103,71 +93,56 @@ h1{
   justify-content: center;
   font-size: 18px;
 }
-a{
+a {
   text-decoration: none;
   padding-top: 10px;
 }
 
-
-
-.logo{
+.logo {
   font-size: 2.2rem;
 }
 
-
-.divi{
+.divi {
   background-color: red;
   width: 100px;
   height: 100px;
 }
 
-
-
-
-
-.text{
+.text {
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Orbitron', sans-serif; 
+  font-family: "Orbitron", sans-serif;
   margin-top: 2em;
 }
 
-.hiding{
+.hiding {
   display: none;
 }
 
-
-
-
-
-
-.topicSector{
+.topicSector {
   background-color: gray;
 }
 
-
-.title{
+.title {
   background-color: red;
   display: flex;
   justify-content: space-between;
 }
 
-
-
-.ED{
+.ED {
   display: flex;
-  gap: 10px
+  gap: 10px;
 }
 
-input{
+input {
   width: 70%;
   margin: 2em;
   min-height: 5em;
 }
 
-.add{
+.add {
   background-color: rgb(115, 192, 0);
-  color:black;
+  color: black;
   border-radius: 20px;
   font-size: 1.3rem;
   margin-left: 2em;
@@ -175,17 +150,14 @@ input{
   padding: 0.5em;
 }
 
-.date{
+.date {
   background-color: rgba(149, 160, 149, 0.383);
 }
 
-
-.color{
+.color {
   background-color: green;
   color: yellow;
 }
-
-
 
 .bttn {
   border: 0;
@@ -196,14 +168,10 @@ input{
   font-weight: 400;
   font-size: 0.8em;
   min-width: 8em;
-
-
 }
 .timeslots-container {
   display: flex;
   justify-content: center;
-
-
 }
 
 .timeslots {
@@ -211,17 +179,18 @@ input{
   flex-wrap: wrap;
   display: flex;
   gap: 0.2em;
-  justify-content:center;
+  justify-content: center;
 }
 
-.react-datepicker{
+
+.react-datepicker {
   background-color: red;
   width: 50vw;
 }
 .react-datepicker {
   min-width: 100%;
   background-color: rgb(54, 224, 15);
-  border:0 !important;
+  border: 0 !important;
   border-radius: 0px !important;
 }
 
@@ -231,45 +200,41 @@ input{
   background-size: cover; /* Ensure the image covers the entire container */
   border-radius: 0px;
   min-height: 50%;
-  min-width: 100%
+  min-width: 100%;
 }
-.react-datepicker__day-names{
+.react-datepicker__day-names {
   margin: auto;
 }
-.react-datepicker__header{
+.react-datepicker__header {
   justify-self: flex-start;
-  background-color: red;
   background-color: rgba(201, 201, 201, 0.306) !important;
   font-family: "Orbitron", sans-serif;
   font-weight: 450;
   font-style: bold;
-  border-radius: 0px  !important;
   border: none !important;
 }
 
-.react-datepicker__day-names{
+.react-datepicker__day-names {
   display: flex;
   align-items: center;
-  background-color: red;
   margin: 0;
 }
 
-.react-datepicker__day--weekend{
+.react-datepicker__day--weekend {
   font-family: "Orbitron", sans-serif;
 }
-.react-datepicker__day{
+.react-datepicker__day {
   background-color: rgba(75, 75, 75, 0.239);
   color: rgb(255, 255, 255) !important;
   border-radius: 0.4em;
   font-size: 1.5em;
   width: 2em !important;
 }
-.react-datepicker__day--disabled{
-  color:rgba(214, 212, 212, 0.746) !important;
+.react-datepicker__day--disabled {
+  color: rgba(214, 212, 212, 0.746) !important;
 }
 
-
-.react-datepicker__day-names{
+.react-datepicker__day-names {
   white-space: nowrap;
   margin-bottom: -8px;
   display: flex;
@@ -277,17 +242,15 @@ input{
   justify-content: center;
 }
 
-.yo{
+.yo {
   font-family: "Orbitron", sans-serif;
-
 }
 
-
-.logo{
+.logo {
   color: #ffff;
 }
 
-.headerbt{
+.headerbt {
   background-color: black;
   border: none;
   color: whitesmoke;
@@ -299,20 +262,15 @@ input{
   padding-left: 0.5em;
   padding-right: 0.5em;
   border-radius: 6px;
-
-
 }
 
-
-
-.headerbt:hover,#bookbttn {
+.headerbt:hover,
+#bookbttn {
   background-color: rgba(255, 255, 255, 0.791);
   color: black;
 }
 
-
-
-.order{
+.order {
   background-color: rgba(0, 0, 0, 0.866);
   color: rgba(251, 251, 251, 0.774);
   border: none;
@@ -324,17 +282,18 @@ input{
   font-size: 20px;
   letter-spacing: 8px;
   font-weight: 300;
-  font-family: 'Orbitron', sans-serif;  border-radius: 8px;
+  font-family: "Orbitron", sans-serif;
+  border-radius: 8px;
   border: 1px solid rgba(155, 215, 15, 0.283);
 }
 
-.gallery{
-  font-family: 'Righteous', cursive;
+.gallery {
+  font-family: "Righteous", cursive;
   font-size: 2.2em;
   margin: 10px;
 }
 
-#sidebar{
+#sidebar {
   background-color: rgba(0, 0, 0, 0.785);
   color: rgb(50, 211, 38);
   padding-top: 10px;
@@ -343,17 +302,15 @@ input{
   justify-content: center;
   font-size: 18px;
 }
-a{
+a {
   text-decoration: none;
   padding-top: 10px;
 }
 
-
-
-.logo{
+.logo {
   font-size: 2.2rem;
 }
-.menuitem{
+.menuitem {
   font-size: 16px;
   border-bottom: 1px solid rgba(250, 250, 250, 0.243);
   text-align: left;
@@ -363,35 +320,31 @@ a{
   padding-bottom: 0.5em;
   display: flex;
   align-items: center;
-
-  
 }
 
-.menuitem :hover{
+.menuitem :hover {
   width: 100%;
   height: 100%;
 }
 
-
-.divi{
+.divi {
   background-color: red;
   width: 100px;
   height: 100px;
 }
 
-.content{
-
+.content {
   background-color: rgba(255, 255, 255, 0.043);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   min-width: 100wv;
   min-height: 60vh;
 }
 
-.buttons{
+.buttons {
   display: flex;
   flex-direction: column;
   margin-top: 20%;
@@ -402,44 +355,32 @@ a{
   border-radius: 6px;
   flex-direction: column;
   width: 100%;
-  overflow:hidden;
+  overflow: hidden;
   padding: 0.8em;
-
-  
 }
 
-
-
-
-.firsword{
-  color:rgba(208, 220, 35, 0.841);
-
+.firsword {
+  color: rgba(208, 220, 35, 0.841);
 }
-.call{
+.call {
   border: 1px solid #fefefeb4;
   border-radius: 8px;
   width: 80%;
   height: 2.2rem;
-  background-color:rgba(0, 0, 0, 0.841);
+  background-color: rgba(0, 0, 0, 0.841);
   font-size: 1em;
   color: rgba(208, 220, 35, 0.841);
   margin: 10px;
   letter-spacing: 2px;
-  font-family: 'Orbitron', sans-serif;  border-radius: 8px;
-
+  font-family: "Orbitron", sans-serif;
+  border-radius: 8px;
 }
 
-.calltext{
-  font-family: 'Rubik', sans-serif;
-
+.calltext {
+  font-family: "Rubik", sans-serif;
 }
 
-
-
-
-
-
-.green{
+.green {
   display: flex;
   gap: 2em;
   width: 100%;
@@ -447,10 +388,7 @@ a{
   justify-content: space-between;
 }
 
-
-
-
-.photos{
+.photos {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -458,41 +396,39 @@ a{
   width: 80%;
 }
 
-.item{
+.item {
   width: px;
 }
 
-.gallerydiv{
+.gallerydiv {
   background-color: red;
   width: 100%;
-
 }
 
-.galleryiimg{
+.galleryiimg {
   width: 99%;
   height: 99%;
   border-radius: 10px;
   border: 1px solid rgba(157, 156, 156, 0.274);
 }
 
-.zinikela{
+.zinikela {
   background-color: blueviolet;
   cursor: pointer;
 }
 
-.ziniko{
+.ziniko {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 99%;
 }
 
-
-.p{
+.p {
   margin-top: 50px;
   height: 100px;
   letter-spacing: 1px;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -502,7 +438,7 @@ a{
   padding-bottom: 7.5em;
 }
 
-.bottomtext{
+.bottomtext {
   margin-top: 1em;
   border-top: 0.5px solid gray;
   display: flex;
@@ -511,72 +447,80 @@ a{
   font-size: 1em;
 }
 
-.logonottom{
-  font-family: 'Righteous', cursive;
+.logonottom {
+  font-family: "Righteous", cursive;
   font-weight: 700;
   letter-spacing: 2px;
   font-size: 1.4em;
-  color:rgba(208, 220, 35, 0.841);
+  color: rgba(208, 220, 35, 0.841);
   padding-left: 0.3em;
 }
 
-
-.wow{
+.wow {
   background-color: rgba(129, 177, 63, 0.553);
   color: red;
 }
 
-
-
-
-.inform{
+.inform {
   padding: 1.2em;
   color: rgba(255, 255, 255, 0.827);
   border-radius: 8px;
-  font-family: 'Orbitron', sans-serif;  border-radius: 8px;
+  font-family: "Orbitron", sans-serif;
+  border-radius: 8px;
   display: inline-flex;
 }
 
-
-
-.bvideo{
+.bvideo {
   width: 90%;
   height: 100%;
 }
 
-
-
-.bookstudio{
-  background: radial-gradient(circle at -10% 51.2%, rgb(209, 220, 37) 0%, rgb(209, 220, 37) 0 15.9%, rgb(0, 0, 0) 15.9%, rgb(58, 65, 58) 24.4%, rgb(19, 30, 37) 24.5%, rgb(209, 220, 37)  66%);  width: 50%;
+.bookstudio {
+  background: radial-gradient(
+    circle at -10% 51.2%,
+    rgb(209, 220, 37) 0%,
+    rgb(209, 220, 37) 0 15.9%,
+    rgb(0, 0, 0) 15.9%,
+    rgb(58, 65, 58) 24.4%,
+    rgb(19, 30, 37) 24.5%,
+    rgb(209, 220, 37) 66%
+  );
+  width: 50%;
   border: none;
   height: 100px;
   border-radius: 8px;
   font-size: 1.3em;
   font-weight: 300;
-  font-family: 'Orbitron', sans-serif;  border-radius: 8px;
-  
+  font-family: "Orbitron", sans-serif;
+  border-radius: 8px;
 }
-.bookequipment{
-  background: radial-gradient(circle at 110% 51.2%, rgb(243, 243, 243) 0%, rgba(231, 231, 240, 0.626) 15.9%, rgb(172, 55, 157) 15.9%, rgb(160, 196, 163) 24.4%, rgb(19, 30, 37) 24.5%, rgba(92, 193, 15, 0.984) 66%);
+.bookequipment {
+  background: radial-gradient(
+    circle at 110% 51.2%,
+    rgb(243, 243, 243) 0%,
+    rgba(231, 231, 240, 0.626) 15.9%,
+    rgb(172, 55, 157) 15.9%,
+    rgb(160, 196, 163) 24.4%,
+    rgb(19, 30, 37) 24.5%,
+    rgba(92, 193, 15, 0.984) 66%
+  );
   width: 50%;
   border: none;
   font-size: 1.3em;
-  font-family: 'Orbitron', sans-serif;  border-radius: 8px;
-
+  font-family: "Orbitron", sans-serif;
+  border-radius: 8px;
 }
 
-.equipmenttext{
+.equipmenttext {
   margin-right: 1.3em;
-  
 }
 
-.back{
+.back {
   width: 32px;
   height: 32px;
 }
 
-
-.load{
+.load {
   background-color: rgb(0, 0, 0);
   height: 100vh;
   display: flex;
@@ -584,26 +528,22 @@ a{
   align-items: center;
 }
 
-
 .pink-button {
-  --button-bg-color:rgba(208, 220, 35, 0.841);
-  --color: black
-
+  --button-bg-color: rgba(208, 220, 35, 0.841);
+  --color: black;
 }
 
-
-.blackbutton{
+.blackbutton {
   --button-bg-color: rgba(0, 0, 0, 0.926);
-  --color: white
+  --color: white;
 }
 
-
-.rentstudio{
+.rentstudio {
   background-color: var(--button-bg-color);
   background-repeat: no-repeat;
-  background-size: 50% auto; 
-  
-  color:  var(--color);
+  background-size: 50% auto;
+
+  color: var(--color);
   width: 15em;
   height: 60px;
   border: 1px solid rgba(209, 220, 35);
@@ -613,31 +553,30 @@ a{
   letter-spacing: 3px;
   border-radius: 50px;
   font-weight: 300;
-  font-family: 'Orbitron', sans-serif;  border-radius: 8px;
+  font-family: "Orbitron", sans-serif;
+  border-radius: 8px;
 }
 
-
-.instructortext{
+.instructortext {
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
-
-
-.social{
+.social {
   margin-top: 0.5em;
   display: flex;
   justify-content: center;
 }
 
-.socialimg{
+.socialimg {
   width: 32px;
   height: 32px;
   margin-right: 1em;
 }
 
-.aboutus{
-  font-family: 'Orbitron', sans-serif;  border-radius: 8px;
+.aboutus {
+  font-family: "Orbitron", sans-serif;
+  border-radius: 8px;
   letter-spacing: 2px;
   padding-bottom: 2em;
   font-weight: 400;
@@ -646,154 +585,142 @@ a{
   margin-top: 0.5em;
 }
 
-
-
 @media only screen and (min-width: 600px) {
-  .content{
-      margin-top: 1em;
-      margin-left: 3em;
-      margin-right: 3em;
+  
+  .content {
+    margin-top: 1em;
+    margin-left: 3em;
+    margin-right: 3em;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: 300% auto; 
-    
-  
+    background-size: 300% auto;
   }
 
-  .buttons{
+  .buttons {
     display: flex;
     flex-direction: row;
     gap: 5em !important;
     margin-top: 5%;
-
   }
-  
-  .hiding{
+
+
+  .hiding {
     display: inline;
     max-width: 80%;
- 
   }
-  .o{
+  .o {
     padding-top: 10%;
     padding-left: 3em;
     display: flex;
     flex-direction: flex-start;
     justify-content: flex-start;
   }
-  .text{
+  .text {
     background-color: rgba(0, 0, 0, 0.089);
     margin-right: 0;
     min-width: 100%;
   }
 
-  .servicedescription{
+  .servicedescription {
     padding-left: 4em;
     padding-right: 4em;
     margin-bottom: 2em;
     margin-top: 2em;
   }
-.ainiko{
-  display: flex;
-  justify-content: center;
-  gap: 3.5em;
-  background-color: rgba(0, 0, 0, 0.089);
-}
-
-.s{
-  margin-top: 1em;
-  margin-left: 3em;
-  margin-right: 3em;
-}
-
-  .gallerySector{
-    margin-left: auto;
-    margin-right: auto;
-   width: 400px;
-   height: 400px;
-
-
-  
-  
-    img{
-      border-radius: 1rem;
-    }
-
+  .ainiko {
+    display: flex;
+    justify-content: center;
+    gap: 3.5em;
+    background-color: rgba(0, 0, 0, 0.089);
   }
 
-  .descr{
+  .s {
+    margin-top: 1em;
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+
+  .gallerySector {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 400px;
+
+    img {
+      border-radius: 1rem;
+    }
+  }
+
+  .descr {
     line-height: 2.5em;
   }
 
-  .descsect{
+  .descsect {
     margin-left: 3em;
     margin-right: 3em;
     margin-top: 1em;
   }
+
+
+
+  
 }
 
-
-.servicedescription{
-  margin-left: 1em;  
+.servicedescription {
+  margin-left: 1em;
   min-width: 90%;
   margin-right: 0.3em;
   margin-left: 1em;
   margin-right: 1em;
 }
 
-.studiorentDecrb{
+.studiorentDecrb {
   margin-left: 1em;
 }
-
-
-
 
 .carr {
   width: 100vw;
   margin: 2rem;
 }
 
-.card{
+.card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-
-.img{
+.img {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
+  filter: grayscale(100%);
+  margin-bottom: 0.7em;
+
 }
 
-.carouselSector{
+.carouselSector {
   max-width: 100px;
   background-color: red;
 }
 
-
-.gallerySector{
+.gallerySector {
   margin: 1em;
   max-width: 100vw;
   max-height: 100vh;
 
-
-  img{
+  img {
     border-radius: 1rem;
   }
 }
 
+.titledj {
+  background-color: #053b48;
 
-
-
-.titledj{
-  background-color: #053B48;
-
-  h1{
+  h1 {
     background-color: gray;
     width: 100%;
     position: absolute;
@@ -802,64 +729,62 @@ a{
   }
 }
 
-.hide{
+.hide {
   visibility: collapse;
 }
 
-.galleryAndfaqTitle{
+.galleryAndfaqTitle {
   display: flex;
   justify-content: space-between;
-  margin-left: 3em;
-  margin-right: 3em;
+  margin-right: 1em;
 }
 
-
-.accordionSector{
+.accordionSector {
   margin-top: 5em;
   width: 500px;
   height: 500px;
-  font-family: 'Orbitron', sans-serif;  border-radius: 8px;
+  font-family: "Orbitron", sans-serif;
+  border-radius: 8px;
   letter-spacing: 2px;
-  padding-bottom: 2em;  
+  padding-bottom: 2em;
   font-weight: 400;
 }
-
-
-button[id=":Rbamula:"], button[id=":RdamulaH1:"], button[id=":Rfamula:"], button[id=":R1darqkq:"], button[id=":R1larqkq:"], button[id=":R1tarqkq:"], button[id=":Rdamula:"]  {
+button[id=":R1farqkq:"],
+button[id=":R1narqkq:"],
+button[id=":R1varqkq:"],
+button[id=":R1darqkq:"],
+button[id=":R1larqkq:"],
+button[id=":R1tarqkq:"],
+button[id=":Rdamula:"] {
   /* Your styles for the button */
-  background-color: rgba(27, 29, 25, 0.501) ;
+  background-color: rgba(27, 29, 25, 0.501);
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 1em;
-  border: none; 
+  border: none;
   border-bottom: 2px solid rgb(35, 200, 16);
   padding: 1em;
 }
 
-.text-foreground .text-large{
+.text-foreground .text-large {
   background-color: red;
 }
 
-
-.faqtext{
+.faqtext {
   padding: 1em;
   background-color: #095028;
 }
 
-
-.text-foreground{
-  font-family: 'Orbitron', sans-serif;  border-radius: 8px;
+.text-foreground {
+  font-family: "Orbitron", sans-serif;
+  border-radius: 8px;
   letter-spacing: 2px;
   padding-bottom: 2em;
   font-weight: 300;
   font-size: 0.8em;
-
 }
-
-
-
 
 .btn-85,
 .btn-85 *,
@@ -1043,85 +968,81 @@ button[id=":Rbamula:"], button[id=":RdamulaH1:"], button[id=":Rfamula:"], button
   }
 }
 
-
-#bookid{
+#bookid {
   background-color: rgba(255, 255, 255, 0.824);
   color: rgba(0, 0, 0, 0.91);
   border: none;
 }
 
-
-.descr{
+.descr {
   max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-shadow: #095028;
-  h1{
+  h1 {
     color: #ffffffcb;
-
   }
-  h6{
+  h6 {
     font-weight: 400;
     font-style: normal;
-     font-size: 1.5em;
+    font-size: 1.5em;
     letter-spacing: -1px;
     color: #ffffff94;
   }
 }
 
-.descrHeader{
-  margin-bottom: -2em
+.descrHeader {
+  margin-bottom: -2em;
 }
 
-.orderbuttons{
+.orderbuttons {
   margin-top: -1.3em;
   display: flex;
   gap: 1em;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
-.linkcolor{
+.linkcolor {
   color: black;
 }
 
-h6{
+h6 {
   font-family: "Gruppo", sans-serif;
 }
 
-aside{
+aside {
   display: flex;
   justify-content: space-around;
-  align-items:center;
+  align-items: center;
   margin-top: 1em;
 
-
-  h6{
+  h6 {
     font-size: 1em;
   }
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-
-.headerbuttons{
+.headerbuttons {
   display: flex;
   gap: 2em;
 }
 
-input{
+input {
   background-color: rgb(56, 56, 56);
   border: none;
-  font-family: 'Orbitron', sans-serif;  border-radius: 8px;
+  font-family: "Orbitron", sans-serif;
+  border-radius: 8px;
   padding: 1em;
 }
 
-#sub{
+#sub {
   background-color: rgba(0, 0, 0, 0.949);
   border: 1px solid gray;
 }
@@ -1130,28 +1051,26 @@ input{
   background-color: #1d8b4d !important;
 }
 
-
-.bookinngzina{
+.bookinngzina {
   background-image: linear-gradient(
-    to bottom,
-    rgba(46, 44, 44, 0.912),
-    rgba(0, 0, 0, 0.949)
-  ),url(https://www.milehighsounds.com/wp-content/uploads/2019/09/IMG_1606.jpg);
+      to bottom,
+      rgba(46, 44, 44, 0.912),
+      rgba(0, 0, 0, 0.949)
+    ),
+    url(https://www.milehighsounds.com/wp-content/uploads/2019/09/IMG_1606.jpg);
   background-position: top;
 }
 
-.datepickerblock{
+.datepickerblock {
   background-color: rgb(26, 106, 15);
- 
 }
 
-.djxrigo{
+.djxrigo {
   border-radius: 8px;
-  margin: 1em;  
-
+  margin: 1em;
 }
 
-.courseBottom{
+.courseBottom {
   margin-top: 0.4em;
   display: flex;
   justify-content: space-between;
@@ -1159,123 +1078,105 @@ input{
   border-top: 1px solid rgba(128, 128, 128, 0.657);
 }
 
-.allcourses{
+.allcourses {
   font-weight: 400;
   flex-wrap: wrap;
   display: flex;
   font-family: "Gruppo", sans-serif;
   justify-content: center;
   background-color: rgba(218, 218, 218, 0.068);
-
-
-
 }
-.coursedescr{
-margin-top: 0.4em;
-display: flex;
-justify-content: space-between;
-align-items: flex-end;
-border-top: 1px solid rgba(113, 109, 109, 0.769);
+.coursedescr {
+  margin-top: 0.4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-top: 1px solid rgba(113, 109, 109, 0.769);
 }
 
-.courseImg{
+.courseImg {
   border-radius: 8px;
   filter: grayscale(100%);
   transition: filter 0.5s ease, transform 0.5s ease; /* Add transition for transform */
 }
 
-.courseImg:hover{
+.courseImg:hover {
   filter: grayscale(0%);
   transform: scale(1.03); /* Zoom in by 10% */
-
 }
 
-#headbtn{
+#headbtn {
   background-color: rgba(255, 255, 255, 0.774);
   color: black;
   font-weight: 700;
-
 }
 
-
-.coursesHeader{
+.coursesHeader {
   margin-top: 2em;
   margin-left: 3em;
 }
 
-.indcourse{
+.indcourse {
   background-color: rgba(255, 0, 0, 0.233);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.mentor{
+.mentor {
   border-radius: 8px;
 }
 
-
-
-.coursedetails{ 
+.coursedetails {
   background-color: rgba(24, 23, 23, 0.519);
-
 }
 
-.imagefull{
+.imagefull {
   border-left: 5px solid rgb(225, 231, 223);
   border-top-left-radius: 16px;
 }
 
-.centering{
+.centering {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
-.fullimg{
+.fullimg {
   border: 1px solid black;
 }
 
-
-
-
-.desc{
+.desc {
   line-height: 1.5em;
 }
 
-.descsect{
+.descsect {
   margin: 1em;
 }
 
 .courseheader {
   width: 100%;
   position: relative;
-  backdrop-filter: blur(100px); 
+  backdrop-filter: blur(100px);
   background-image: url("https://images.unsplash.com/photo-1555432384-3b2fa7b650c9?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   margin-bottom: 0.4em;
 }
 
-.courseName{
+.courseName {
   padding: 0.2em;
   width: 100%;
   text-align: center;
   padding-bottom: 0.2em;
-  backdrop-filter: blur(30px); 
-
+  backdrop-filter: blur(30px);
 }
 
-
-
-
-.headerbtactive{
+.headerbtactive {
   background-color: rgb(255, 255, 255);
   color: black;
   min-width: 8em;
-
 }
 
-.coursesbtn{
+.coursesbtn {
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   border: none;
@@ -1286,13 +1187,9 @@ border-top: 1px solid rgba(113, 109, 109, 0.769);
   font-weight: 800;
   padding-left: 0.5em;
   padding-right: 0.5em;
-  
-
 }
 
-
-
-.coursesbtnactive{
+.coursesbtnactive {
   background-color: rgb(255, 255, 255);
   color: black;
   min-width: 8em;
@@ -1305,9 +1202,7 @@ border-top: 1px solid rgba(113, 109, 109, 0.769);
   padding-left: 0.5em;
   padding-right: 0.5em;
   min-width: 10rem;
-
 }
-
 
 .my-config {
   --darkmode: 1;
@@ -1316,7 +1211,122 @@ border-top: 1px solid rgba(113, 109, 109, 0.769);
   --l-accent: 61%;
 }
 
-.zinikosgogo{
-    max-width: 500px;
-    max-height: 500px;
-} 
+.zinikosgogo {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+
+
+.outerContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1em;
+  padding-right: 1em;
+}
+
+.container1 {
+  display: flex;
+  align-items: flex-end;
+  margin: 1em;
+  gap: 0.4em;
+  border-bottom: 1px solid rgba(165, 198, 156, 0.402);
+}
+
+
+.container2 {
+  display: flex;
+  margin: 1em;
+  gap: 0.4em;
+  border-top: 1px solid rgba(242, 22, 22, 0.22);
+}
+
+.container1 h2 {
+  color: rgba(255, 255, 255, 0.713);
+}
+
+.rentimg {
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.rentimg2 {
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+  .outerContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container1 {
+    flex-direction: column;
+  }
+
+  .container2 {
+    flex-direction: column;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+
+  form input{
+    width: 85%;
+    margin-bottom: 0em;
+  }
+
+  .MuiButtonBase-root{
+    background-color: green;
+    width: 85% !important;
+  }
+
+}
+
+.timeslotTitle{
+  margin-top: 0.2em;
+  margin-left: 0.7em;
+  color: #ffffffb2;
+  font-family: "Orbitron", sans-serif;
+  font-size: 2em;
+}
+
+
+
+
+.availabletimesTitle{
+  font-family: "Orbitron", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1em;
+  color: #ffffff86;
+  margin-bottom: 0.3em;
+}
+
+.MuiButtonBase-root{
+  margin: 2em;
+  background-color: green;
+  width: 200px;
+  height: 4em;
+}
+
+.thank{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.thanks{
+  font-family: "Orbitron", sans-serif;
+  margin-top: 5em;
+  margin-bottom: 2em;
+}
+.gallery{
+}

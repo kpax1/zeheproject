@@ -96,7 +96,9 @@ const Form = ({ choosedTimes, choosedDate, idEnd }) => {
 
   return (
     <>
-      <h1>Choose your time</h1>
+    <div>
+
+      <h1 className="timeslotTitle">Fill in a form</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="email"
@@ -125,12 +127,14 @@ const Form = ({ choosedTimes, choosedDate, idEnd }) => {
 
         {sending ? (
           <Button onClick={handleSubmit} variant="contained">
-            Book
+            confirm
           </Button>
         ) : (
           <CircularProgress />
         )}
       </form>
+          </div>
+
     </>
   );
 };

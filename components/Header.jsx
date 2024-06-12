@@ -3,11 +3,17 @@ import { Divide as Hamburger } from "hamburger-react";
 import { useExampleContext } from "@/app/ExampleContext";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname, useRouter } from 'next/navigation'
+
+
 export default function Head() {
 const  {isOpen, setOpen} = useExampleContext();
 const {handleClick, myDivRef,aboutRef,galleryRef} = useExampleContext()
+const pathname = usePathname()
+
 
 const [isMobile, setIsMobile] = useState(true);
+
 
 useEffect(() => {
   // Add event listener to detect window resize
@@ -62,15 +68,20 @@ useEffect(() => {
           </Link>
         </li>
 
+       
         <li>
-        <Link className="headerbt" href='#' onClick={()=>handleClick(myDivRef)}>Services</Link>
-
+        <Link className="headerbt"  href="/rent">
+            Rent equipments
+          </Link>
         </li>
 
-        <li>
-        <Link className="headerbt" href='#' onClick={()=>handleClick(galleryRef)}>Gallery</Link>
+       {pathname === '/' ? (<><li>
+              <Link className="headerbt" href='#' onClick={() => handleClick(myDivRef)}>Services</Link>
 
-        </li>
+            </li><li>
+                <Link className="headerbt" href='#' onClick={() => handleClick(galleryRef)}>Gallery</Link>
+
+              </li></>): null }
 
 
       </ul>

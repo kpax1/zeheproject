@@ -4,6 +4,7 @@ import Image from 'next/image'
 import back from "../public/back.svg";
 import Rent from "./Rent";
 import Carrousel from './Carousel'
+import Link from "next/link";
 export const item = {
   hidden: { opacity: 0 },
   visible: { opacity: 1, transform: "scale(1)" },
@@ -28,8 +29,7 @@ export default function Services({ services, setServices }) {
       <div className="ordersection">
         {services === 0 && <h1>/ Our Services</h1>}
         {services === 1 && <h1>/ Rent a studio</h1>}
-        {services === 2 && <h1>/ Rent equipment</h1>}
-        {(services === 1 || services === 2) && (
+        {services === 1 && (
           // eslint-disable-next-line @next/next/no-img-element
           <Image
             src={back}
@@ -100,12 +100,19 @@ export default function Services({ services, setServices }) {
             animate={{ opacity: 1, transform: "scale(1)" }}
             transition={{ type: "spring" }}
           >
-            <button
+            
+
+
+          <Link href={'/rent'}>
+          <button
               className="rentstudio pink-button"
-              onClick={() => setServices(2)}
+              
             >
               Rent equipments
             </button>
+          </Link>
+
+          
 
 
 
@@ -135,9 +142,9 @@ export default function Services({ services, setServices }) {
             initial={{ y: 100, opacity: 0.1 }}
             whileInView={{ y: 0, opacity: 1 }}
           >
-            <a href="https://calendar.google.com/calendar/u/0/embed?src=nwscrecords@gmail.com&ctz=Asia/Tbilisi&fbclid=IwAR2jCSWxhaQq0W0aqAftsvmFCuKrt67f8XCU7pweM4zemCMn2MsgpfsK-Kw">
+            <Link href={'/booking'}>
               Book Online
-            </a>
+            </Link>
           </motion.button>
 
           <motion.button
@@ -146,16 +153,14 @@ export default function Services({ services, setServices }) {
             initial={{ y: 100, opacity: 0.1 }}
             whileInView={{ y: 0, opacity: 1 }}
           >
-            about us
+            instagram
           </motion.button>
 
         </>
       )}
 
 
-      {services === 2 && <Rent />}
-      <div>
-      </div>
+  
     </motion.section>
 
 
