@@ -4,6 +4,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Form from "@/components/Form";
 import styled from "styled-components";
+import fetchData from "@/app/lib/fetchavailableTimes";
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
 const Page = () => {
@@ -19,6 +20,10 @@ const Page = () => {
   const formattedDate = `${startDate.getDate()}.${
     startDate.getMonth() + 1
   }.${startDate.getFullYear()}`;
+
+  const dateNow = `${minDate.getDate()}.${
+    minDate.getMonth() + 1
+  }.${minDate.getFullYear()}`;
 
   console.log("now", formattedDate, "choosingdate", formattedDate);
 
@@ -102,7 +107,7 @@ const Page = () => {
         inline
       />
 
-      <h6 className="availabletimesTitle">Available times on this date : </h6>
+      <TimeslotsText>Choose your time slots</TimeslotsText>
       <Suspense fallback={<h1> LOADING ...</h1>}>
         <div className="timeslots-container">
           <ul className="timeslots">
@@ -142,3 +147,11 @@ const Page = () => {
 
 export default Page;
 
+const TimeslotsText = styled.h3`
+  font-family: "Orbitron", sans-serif;
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+  color: gray;
+  margin-bottom: 0.4em;
+`;
