@@ -120,13 +120,14 @@ const Form = ({ choosedTimes, choosedDate, idEnd }) => {
           type="number"
           name="number"
           id="number"
+          className="number"
           placeholder="Phone number *"
           value={formData.number}
           onChange={handleInputChange}
         />
 
         {sending ? (
-          <Button onClick={handleSubmit} variant="contained">
+          <Button className="submit" onClick={handleSubmit} variant="contained">
             confirm
           </Button>
         ) : (

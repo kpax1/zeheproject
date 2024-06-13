@@ -74,7 +74,7 @@ function App() {
       <motion.div
         className="ordersection"
         initial={{ y: 100, opacity: 0 }}
-        whileInView={{ y: -10, opacity: 1 }}
+        whileInView={{ y: 0, opacity: 1 }}
         transition={{ type: "spring" }}
         ref={galleryRef}
       >
@@ -84,7 +84,10 @@ function App() {
         </div>
 
         <div className="ainiko">
-          <Gallery  imgArray={imgArray} />
+        <div>
+        <Gallery  imgArray={imgArray} />
+
+        </div>
           <div>
           <HideFAq> / FAQ</HideFAq>
 

@@ -18,7 +18,7 @@ const [isMobile, setIsMobile] = useState(true);
 useEffect(() => {
   // Add event listener to detect window resize
   const handleResize = () => {
-    setIsMobile(window.innerWidth <= 926); // Adjust breakpoint as needed
+    setIsMobile(window.innerWidth <= 997); // Adjust breakpoint as needed
   };
 
   // Initial check on mount
@@ -50,7 +50,7 @@ useEffect(() => {
           color="#ffffff"
           easing="ease-in"
           hideOutline={true}
-          size={28}
+          size={34}
         />
       </div> :
     

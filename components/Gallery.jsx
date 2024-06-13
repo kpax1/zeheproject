@@ -9,7 +9,7 @@ import "react-multi-carousel/lib/styles.css";
 
 export default function Gallery({  imgArray,disc }) {
   return (
-    <div>
+    <div className="gallSector">
     
         <h1 className="hide">/ Gallery</h1>
       
