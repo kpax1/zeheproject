@@ -352,11 +352,10 @@ a {
   border-radius: 6px;
   flex-direction: column;
   width: 100%;
-  overflow: hidden;
   padding: 0.8em;
 }
 .gallSector{
-  margin-bottom: 8em;
+  margin-bottom: 1em;
   width: 100%;
   min-height: 100%;
 }
@@ -586,12 +585,24 @@ a {
 .aboutus p {
   margin-top: 0.5em;
 }
+@media only screen and (max-width: 600px) {
+
+  .gallerySector{
+  }
+}
 
 @media only screen and (min-width: 600px) {
+  .gallSector{
+    margin-bottom: 6em;
+    width: 100%;
+    min-height: 100%;
+  }
+
   .ainiko{
     display: flex;
     justify-content: space-around;
     align-items: center;
+
   }
   .accordionSector{
     min-width: 100% ;
@@ -743,6 +754,7 @@ a {
   display: flex;
   justify-content: space-between;
   margin-right: 1em;
+  margin-bottom: -2em;
 }
 
 
@@ -1224,6 +1236,8 @@ input {
 
 
 @media only screen and (max-width: 900px) {
+
+  
 
   .outerContainer {
     display: flex;
