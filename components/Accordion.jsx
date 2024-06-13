@@ -42,9 +42,11 @@ const StyledAccordion = styled(Accordion)`
   background-color: rgba(255, 0, 0, 0.077);
 
   @media (min-width: 700px) {
-    margin-right: 2em;
+    max-width: 500px;
+    margin-right: 4em;
+    margin-top: 4em;
     margin-left: 2em;
-    background-color: red;
-
+    background-color:  
+                                                                 background: -webkit-linear-gradient(90deg, #2f6f67,#000000,#2a7942);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(90deg, #2f6f67,#000000,#2a7942);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
   }
 `;
