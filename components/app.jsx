@@ -116,6 +116,6 @@ const HideFAq = styled.h1`
   display: none;
   @media (max-width: 600px) {
     display: block;
-    margin-left: 0.2em;
+    margin-bottom: 2em;
   }
 `
