@@ -50,7 +50,7 @@ useEffect(() => {
           color="#ffffff"
           easing="ease-in"
           hideOutline={true}
-          size={34}
+          size={30}
         />
       </div> :
     

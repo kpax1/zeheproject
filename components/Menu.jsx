@@ -47,7 +47,7 @@ export default function RightMenu() {
 const Menu = styled.nav`
   background-color: rgba(0, 0, 0, 0.97);
   position: absolute;
-  top: 3.1em;
+  top: 3.5em;
   height: 100vh;
   width: 100vw;
   right: 0;
