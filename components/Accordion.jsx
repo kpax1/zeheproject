@@ -39,14 +39,13 @@ const StyledAccordion = styled(Accordion)`
   letter-spacing: 2px;
   padding-bottom: 2em;
   font-weight: 400;
-  background-color: rgba(255, 0, 0, 0.077);
+  background-color: red;
 
   @media (min-width: 700px) {
-    max-width: 500px;
+    mix-width: 500px;
     margin-right: 4em;
     margin-top: 4em;
     margin-left: 2em;
-    background-color:  
-                                                                 background: -webkit-linear-gradient(90deg, #2f6f67,#000000,#2a7942);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(90deg, #2f6f67,#000000,#2a7942);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+    background-color: -webkit-linear-gradient(90deg, #2f6f67,#000000,#2a7942);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(90deg, #2f6f67,#000000,#2a7942);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
   }
 `;
