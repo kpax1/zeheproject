@@ -33,7 +33,7 @@ export default Akk;
 
 const StyledAccordion = styled(Accordion)`
   margin-top: 2em;
-  width: 80%;
+  width: 99%;
   font-family: "Orbitron", sans-serif;  
   border-radius: 8px;
   letter-spacing: 2px;
@@ -42,6 +42,7 @@ const StyledAccordion = styled(Accordion)`
   background-color: rgba(255, 0, 0, 0.077);
 
   @media (min-width: 700px) {
-    width: 60%;
+    margin-right: 2em;
+    margin-left: 2em;
   }
 `;
